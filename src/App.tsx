@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <div className='min-h-screen flex flex-wrap content-between bg-gray-700 text-white'>
-        <div className='w-full block'>
+      <div className='min-h-screen  flex flex-wrap content-between bg-gray-700 text-white'>
+        <div className='w-full '>
           <Header />
           <main>
             TODO : <Outlet/>
