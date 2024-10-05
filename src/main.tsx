@@ -11,12 +11,15 @@ const router = createBrowserRouter([
     path: '/',
     element: <App/>,
     children: [
-      {}
+      {
+        path: '/',
+        element: 'Home'
+      }
     ]
   }
 ])
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <StrictMode >
     <Provider store={store}>
     <RouterProvider router={router}/>
     </Provider>
