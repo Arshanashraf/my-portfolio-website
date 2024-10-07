@@ -33,9 +33,9 @@ function Header() {
     ]
    // fixed -mt-7
   return (
-    <div className='w-full bg-black fixed '>  
-    <Navbar expand="lg" className="bg-body-tertiary ">
-      <Container fluid>
+    <div className='w-full left-0 top-0 z-50 bg-black fixed '>  
+    <Navbar expand="lg" className="w-full bg-body-tertiary ">
+      <Container fluid > 
         <Navbar.Brand ><Link to={'/'}/><Logo /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='navbar-dark' />
         <Navbar.Collapse id="navbarScroll">
