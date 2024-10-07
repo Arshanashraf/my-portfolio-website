@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './store/store.ts'
+import Home from './Pages/Home.tsx'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: 'Home'
+        element: <Home/>
       }
     ]
   }
