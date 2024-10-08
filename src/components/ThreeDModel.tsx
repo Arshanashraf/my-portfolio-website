@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import * as THREE from 'three'; // Import THREE types
 const Model = () => {
   const { scene } = useGLTF('/3dImage/source/laptop.glb');
-  scene.position.set(0, -4, 0);
+  scene.position.set(-0.5, -4, 0);
  
   const modelRef = useRef<THREE.Group>(null); 
 
@@ -20,7 +20,7 @@ const Model = () => {
 
 const ThreeDModel = () => {
   return (
-    <Canvas style={{ height: '80vh' }}>
+    <Canvas style={{ height: '90vh' }}>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Model />
