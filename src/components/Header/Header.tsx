@@ -12,12 +12,12 @@ function Header() {
     const navItems= [
       {
         name: 'Home',
-        slug: '/',
+        slug: '#home',
         active: true
       },
       {
         name: 'About',
-        slug: '/about',
+        slug: '#about',
         active: authStatus
       },
       {
@@ -33,7 +33,7 @@ function Header() {
     ]
    // fixed -mt-7
   return (
-    <div className='w-full left-0 top-0 z-50 bg-black fixed '>  
+    <div className='w-full left-0 top-0 z-50 fixed '>  
     <Navbar expand="lg" className="w-full bg-body-tertiary ">
       <Container fluid > 
         <Navbar.Brand ><Link to={'/'}/><Logo /></Navbar.Brand>
@@ -50,7 +50,7 @@ function Header() {
               <li key={item.name}>
                 <button
                 onClick={()=> navigate(item.slug)}
-                className='inline-block px-6 py-2 duration-200 text-lg hover:text-green-400 hover:animate-bounce rounded-full'
+                className='inline-block px-6 py-2 duration-200  text-lg hover:text-green-400 hover:animate-bounce rounded-full'
                 >{item.name}</button>
               </li>
             ) : null
