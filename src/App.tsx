@@ -2,8 +2,11 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import { Outlet } from 'react-router-dom'
+// import { Outlet } from 'react-router-dom'
 import About from './Pages/About'
+import Home from './Pages/Home'
+import './components/global.css'
+
 
 
 function App() {
@@ -14,10 +17,11 @@ function App() {
         <div className='w-full '>
           
           <Header />
-          <main>
+          {/* <main>
           
             <Outlet/>
-          </main>
+          </main> */}
+          <Home />
           <About />
           
           <Footer/>

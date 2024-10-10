@@ -6,7 +6,7 @@ function Footer() {
     <section className="mt-80 relative overflow-hidden py-10 bg-black border border-t-2 border-t-black">
             <div className="relative z-10 mx-auto max-w-7xl px-4">
                 <div className="-m-6 flex flex-wrap">
-                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
+                    <div className="w-full p-6 md:w-1/2 lg:w-5/12 xl:w-5/12 2xl:w-5/12">
                         <div className="flex h-full flex-col justify-between">
                             <div className="mb-4 inline-flex items-center">
                                 <Logo  />
@@ -21,7 +21,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
+                    <div className="w-full p-6 md:w-1/2 lg:w-3/12 xl:w-3/12 2xl:w-3/12" >
                         <div className="h-full mt-8">
                             
                             <ul>
@@ -60,7 +60,7 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12 mt-10">
+                    <div className="w-full p-6 md:w-1/2 lg:w-3/12 xl:w-3/12 2xl:w-3/12 mt-10">
                         <div className="h-full">
                             <h3 className="mb-9  text-md font-semibold uppercase text-white">
                                 Get in touch 
