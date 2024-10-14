@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div id='about' className="relative mt-36 lg:mt-16 md:-mt-64 sm:-mt-80 xs:-mt-80">
+    <div id='about' className="relative mt-36 xl:mt-16 lg:mt-16 md:-mt-64 sm:-mt-80 xs:-mt-80">
       <Slider {...settings} className="w-full">
         <div className="h-screen bg-cover bg-center bg-[url('src/assets/Images/slider/slider1.png')]" style={{ backgroundImage: "" }} />
         <div className="h-screen bg-cover bg-center bg-[url('src/assets/Images/slider/slider2.png')]" style={{ backgroundImage: "url('https://whvn.cc/421dgx.jpg')" }} />
