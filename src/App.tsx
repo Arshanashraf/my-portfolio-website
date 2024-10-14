@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import About from './Pages/About'
 import Home from './Pages/Home'
 import './components/global.css'
+import Skills from './Pages/Skills'
 
 
 
@@ -23,7 +24,7 @@ function App() {
           </main> */}
           <Home />
           <About />
-          
+          <Skills />
           <Footer/>
         </div>
       </div>
