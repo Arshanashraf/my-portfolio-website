@@ -7,6 +7,7 @@ import About from './Pages/About'
 import Home from './Pages/Home'
 import './components/global.css'
 import Skills from './Pages/Skills'
+import SkillLogos from './Pages/SkillLogos'
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Home />
           <About />
           <Skills />
+          <SkillLogos />
           <Footer/>
         </div>
       </div>
