@@ -18,7 +18,7 @@ function Skills() {
                     }]
                 }
             ]} 
-            ><img className="h-96 relative ml-96 pl-28 top-48 floating xs:ml-0 xs:pl-24 xs:h-72 sm:ml-0 md:ml-10 md:pl-60 md:h-80 lg:ml-48 xl:pl-0 xl:ml-80" src={Planet} alt="" /></Plx>
+            ><img className="h-96 relative ml-96 pl-28 top-48 floating delay1 xs:ml-0 xs:pl-24 xs:h-72 sm:ml-0 md:ml-10 md:pl-60 md:h-80 lg:ml-48 xl:pl-0 xl:ml-80" src={Planet} alt="" /></Plx>
         </div>
         <div>
             <Plx 
@@ -38,7 +38,7 @@ function Skills() {
                     }]
                 }
             ]} 
-            ><img className="h-32 absolute left-52 floating xs:left-10 xs:h-16 xs:top-24 sm:left-20 sm:h-28 md:left-32 md:top-24 md:h-28 lg:left-28 " src={Satellite} alt="" /></Plx>
+            ><img className="h-32 absolute left-52 floating delay2 xs:left-10 xs:h-16 xs:top-24 sm:left-20 sm:h-28 md:left-32 md:top-24 md:h-28 lg:left-28 " src={Satellite} alt="" /></Plx>
         </div>
         <div>
             <Plx 
@@ -64,6 +64,7 @@ function Skills() {
             ]} 
             ><img className="h-32 absolute left-52 floating xs:h-14 xs:-left-80 xs:top-28 sm:h-28 sm:-left-56 md:h-24 md:-left-40 md:top-24 lg:-left-28 xl:-left-6" src={Astronaut} alt=""  /></Plx>
         </div>
+        
     </div>
   )
 }
