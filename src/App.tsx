@@ -8,6 +8,8 @@ import Home from './Pages/Home'
 import './components/global.css'
 import Skills from './Pages/Skills'
 import SkillLogos from './Pages/SkillLogos'
+import Work from './Pages/Work'
+import Contact from './Pages/Contact'
 
 
 
@@ -27,6 +29,8 @@ function App() {
           <About />
           <Skills />
           <SkillLogos />
+          <Work />
+          <Contact />
           <Footer/>
         </div>
       </div>
