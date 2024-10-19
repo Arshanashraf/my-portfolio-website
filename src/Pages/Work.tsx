@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <div>
       <div id="work" className="">
-      <div className="pl-28 pr-40 pb-6 lg:pl-0 lg:pr-0">
+      <div className="pl-28 pr-40 pb-6 lg:pl-0 lg:pr-0 xs:pl-6 xs:pr-6" >
       <h1 className="pt-28 mb-4 text-4xl font-bold">My portfolio includes these <span className="font-extrabold text-5xl bg-gradient-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">Projects:</span>
       </h1>
       <p className="text-lg font-semibold ">
