@@ -1,5 +1,5 @@
 import Slider from 'react-slick';
-
+//import Slider1 from '../../public/images/slider1.png'
 const About = () => {
   const settings = {
     dots: true, // Show navigation dots
@@ -14,9 +14,9 @@ const About = () => {
   return (
     <div id='about' className="relative mt-36 xl:mt-16 lg:mt-16 md:-mt-64 sm:-mt-80 xs:-mt-80">
       <Slider {...settings} className="w-full">
-        <div className="h-screen bg-cover bg-center " style={{background:'url("/images/slider/slider1.png")', backgroundRepeat:'no-repeat'}} />
-         <div className="h-screen bg-cover bg-center "  style={{background:'url("/images/slider/slider2.png")', backgroundRepeat:'no-repeat'}} />{/* style={{ backgroundImage: "url('https://whvn.cc/421dgx.jpg')" }} */}
-        <div className="h-screen bg-cover bg-center " style={{background:'url("/images/slider/slider3.png")', backgroundRepeat:'no-repeat'}}  />
+        <div className="h-screen bg-cover bg-center slider1"  />
+         <div className="h-screen bg-cover bg-center slider2"  />{/* style={{ backgroundImage: "url('https://whvn.cc/421dgx.jpg')" }} */}
+        <div className="h-screen bg-cover bg-center slider3"  />
       </Slider>
 
       {/* Centered Content */}
