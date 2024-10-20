@@ -4,7 +4,7 @@ import Satellite from "../assets/Images/parallax/satellite.png"
 import Astronaut from "../assets/Images/parallax/astronaut.png"
 function Skills() {
   return (
-    <div className=" h-screen bg-cover bg-center " style={{background:'url("/images/parallax/parallax-bg.png")', backgroundRepeat:'no-repeat'}}>
+    <div className=" h-screen bg-cover bg-center " style={{background:'url("/images/parallax-bg.png")', backgroundRepeat:'no-repeat'}}>
         <div>
             <Plx 
             parallaxData = {[
