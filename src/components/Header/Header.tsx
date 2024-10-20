@@ -92,7 +92,7 @@ function Header() {
               onClick={toggleMusic}
               className="text-lg  text-white p-2 rounded-full bg-cyan-500 hover:bg-cyan-700"
             >
-              {isPlaying ? <FaVolumeUp /> : <FaVolumeMute />}
+              {isPlaying ? <FaVolumeMute /> : <FaVolumeUp />}
             </button>
           </div>
 
