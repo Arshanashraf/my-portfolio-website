@@ -14,9 +14,9 @@ const About = () => {
   return (
     <div id='about' className="relative mt-36 xl:mt-16 lg:mt-16 md:-mt-64 sm:-mt-80 xs:-mt-80">
       <Slider {...settings} className="w-full">
-        <div className="h-screen bg-cover bg-center bg-[url('src/assets/Images/slider/slider1.png')]"  />
-         <div className="h-screen bg-cover bg-center bg-[url('src/assets/Images/slider/slider2.png')]"  />{/* style={{ backgroundImage: "url('https://whvn.cc/421dgx.jpg')" }} */}
-        <div className="h-screen bg-cover bg-center bg-[url('src/assets/Images/slider/slider3.png')]"  />
+        <div className="h-screen bg-cover bg-center " style={{background:'url("/images/slider/slider1.png")', backgroundRepeat:'no-repeat'}} />
+         <div className="h-screen bg-cover bg-center "  style={{background:'url("/images/slider/slider2.png")', backgroundRepeat:'no-repeat'}} />{/* style={{ backgroundImage: "url('https://whvn.cc/421dgx.jpg')" }} */}
+        <div className="h-screen bg-cover bg-center " style={{background:'url("/images/slider/slider3.png")', backgroundRepeat:'no-repeat'}}  />
       </Slider>
 
       {/* Centered Content */}
