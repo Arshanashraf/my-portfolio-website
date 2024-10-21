@@ -20,6 +20,7 @@ function Header() {
   const [activeSection, setActiveSection] = useState('home');
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [userInteracted, setUserInteracted] = useState(false);
 
   // Scroll-based active section detection
   useEffect(() => {
@@ -54,24 +55,55 @@ function Header() {
 
   // Toggle music play/pause
   const toggleMusic = () => {
-    if (isPlaying) {
-      audioRef.current?.pause();
-    } else {
-      audioRef.current?.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-    // Automatically play music after page loads
-    useEffect(() => {
-      const audio = audioRef.current;
-      if (audio) {
+    const audio = audioRef.current;
+
+    if (audio) {
+      if (isPlaying) {
+        console.log('Pausing audio...');
+        audio.pause();
+        setIsPlaying(false);
+      } else {
+        console.log('Playing audio...');
         audio.play()
-          .then(() => setIsPlaying(true))  // Set the state to "playing" if successful
+          .then(() => {
+            setIsPlaying(true);
+          })
           .catch((error) => {
-            console.log('Autoplay was prevented:', error);
+            console.log('Play error:', error);
           });
       }
-    }, []);  
+    }
+  };
+
+  // Automatically play music after user interaction
+  useEffect(() => {
+    const audio = audioRef.current;
+
+    const handleInteraction = () => {
+      if (audio && !userInteracted) {
+        console.log('Playing audio on interaction...');
+        audio.play()
+          .then(() => {
+            setIsPlaying(true);
+            setUserInteracted(true); // Prevents autoplay from triggering again
+          })
+          .catch((error) => console.log('Autoplay prevented:', error));
+      }
+
+      // Cleanup: remove event listeners
+      window.removeEventListener('click', handleInteraction);
+      window.removeEventListener('keydown', handleInteraction);
+    };
+
+    // Add event listener for user interaction (click or keydown)
+    window.addEventListener('click', handleInteraction);
+    window.addEventListener('keydown', handleInteraction);
+
+    return () => {
+      window.removeEventListener('click', handleInteraction);
+      window.removeEventListener('keydown', handleInteraction);
+    };
+  }, [userInteracted]);
 
   return (
     <div className="w-full left-0 top-0 z-50 fixed">
@@ -90,21 +122,21 @@ function Header() {
             {/* Sound Toggle Button */}
             <button
               onClick={toggleMusic}
-              className="text-lg  text-white p-2 rounded-full bg-cyan-500 hover:bg-cyan-700"
+              className="text-lg text-white p-2 rounded-full bg-cyan-500 hover:bg-cyan-700"
             >
               {isPlaying ? <FaVolumeMute /> : <FaVolumeUp />}
             </button>
           </div>
 
           <Navbar.Collapse id="navbarScroll" className="justify-center">
-            <Nav className=" mx-auto my-2 my-lg-0 " style={{ maxHeight: '100px' }} navbarScroll>
-              <ul className="flex  ml-auto sm:bg-black sm:h-52 sm:px-10 sm:pt-4 sm:flex-col sm:rounded-lg xs:bg-black xs:h-52 xs:px-10 xs:pt-4 xs:flex-col xs:rounded-lg ">
+            <Nav className="mx-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+              <ul className="flex ml-auto sm:bg-black sm:h-52 sm:px-10 sm:pt-4 sm:flex-col sm:rounded-lg xs:bg-black xs:h-52 xs:px-10 xs:pt-4 xs:flex-col xs:rounded-lg">
                 {navItems.map((item) =>
                   item.active ? (
                     <li key={item.name}>
                       <button
                         onClick={() => handleNavClick(item.slug)}
-                        className={`inline-block px-6 py-2 duration-200 text-lg hover:text-green-400 hover:animate-bounce rounded-full  ${
+                        className={`inline-block px-6 py-2 duration-200 text-lg hover:text-green-400 hover:animate-bounce rounded-full ${
                           activeSection === item.slug.slice(1) ? 'text-green-400' : ''
                         }`}
                       >
