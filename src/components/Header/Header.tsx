@@ -107,7 +107,7 @@ function Header() {
 
   return (
     <div className="w-full left-0 top-0 z-50 fixed">
-      <Navbar expand="md" className="w-full bg-body-tertiary">
+      <Navbar expand="md" className="w-full bg-body-tertiary slideBottom opacity-0">
         <Container fluid className="flex justify-between items-center">
           {/* Logo on the left */}
           <Navbar.Brand href="#home">
