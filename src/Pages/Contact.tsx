@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <div id='contact' className="mt-10 h-fit bg-cover bg-center  border-red-950 border-2 shadow-md shadow-red-950" style={{background:'url("/images/lavabg.jpg")', backgroundRepeat:'no-repeat'}} >
       <div className='flex flex-wrap pt-20'>
-        <div className=" absolute left-52 z-20  max-w-auto w-96 p-10 border-2 border-red-950 rounded-2xl shadow-md shadow-red-900 bg-black bg-opacity-55 xs:w-80 xs:left-10 sm:left-10 md:left-20 lg:left-20 xl:left-28">
+        <div className=" absolute left-52 z-20  max-w-auto w-96 p-10 border-2 border-red-950 rounded-2xl shadow-md shadow-red-900 bg-black bg-opacity-55 2xs:w-64 2xs:left-2 xs:w-80 xs:left-10 sm:left-10 md:left-20 lg:left-20 xl:left-28">
               <h2 className="text-2xl font-bold text-center mb-6">Get in Touch</h2>
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
