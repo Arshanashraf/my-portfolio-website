@@ -19,7 +19,7 @@ const Model = () => {
 
 const ThreeDModel = () => {
   return (
-    <Canvas  style={{ height: '90vh', }}>
+    <Canvas style={{ height: '90vh', }}>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Model />
