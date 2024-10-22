@@ -6,7 +6,6 @@ import * as THREE from 'three'; // Import THREE types
 const Model = () => {
   const { scene } = useGLTF('/3dImage/source/laptop.glb');
   scene.position.set(-0.5, -4, 0);
- 
   const modelRef = useRef<THREE.Group>(null); 
 
   // Rotate the model on every frame
@@ -20,7 +19,7 @@ const Model = () => {
 
 const ThreeDModel = () => {
   return (
-    <Canvas style={{ height: '90vh' }}>
+    <Canvas  style={{ height: '90vh', }}>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Model />
