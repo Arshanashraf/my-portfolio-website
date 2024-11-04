@@ -12,7 +12,7 @@ function ProCards({image,title,text,footer,link}:CardProps) {
   return (
     <div>
         <Link to={link} target="_blank">
-            <Card className= "bg-gray-800 text-white w-80 h-full p-2 border-cyan-500 rounded-lg text-start hover:animate-pulse">
+            <Card className= "bg-gray-800 text-white w-80 h-full p-2 border-cyan-500 rounded-lg text-start hover:animate-pulse shadow-xl shadow-cyan-950">
                 <CardImg className="h-40 border-none" src={image}/>
                 <CardBody>
                     <CardTitle className="font-bold text-2xl text-cyan-500">{title}</CardTitle>

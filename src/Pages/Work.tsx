@@ -1,6 +1,6 @@
 import ProCards from "../components/ProCards"
 import card1 from '../assets/Images/work/card1.png'
-import card2 from '../assets/Images/work/card2.jpg'
+import card2 from '../assets/Images/work/card2.png'
 import card3 from '../assets/Images/work/card3.png'
 
 
@@ -17,18 +17,19 @@ const Work = () => {
       </div>
       <div className="flex flex-wrap gap-3 justify-center">
       <ProCards 
+        title="ApexBot"
+        text="This AI chatbot website delivers real-time responses with a sleek design, built using React, Tailwind CSS, Appwrite, and APIs."
+        image={card2}
+        link="https://github.com/Arshanashraf/AI-powered-Apexbot"
+        footer="#react #redux #appwrite #tailwind  #react-router-dom #react-hook-form #huggingface/inference-api"/>
+      <ProCards 
         title="Mega Blog"
         text="It is a simple, user-friendly platform for creating and publishing blogs with ease"
         image={card1}
         link="https://github.com/Arshanashraf/megaBlog-react-appwrite"
         footer="#react #redux #appwrite #tailwind #tinymce #react-router-dom #react-hook-form"/>
         
-        <ProCards 
-        title="Texts Web Clone"
-        text="This web application clone is entirely based on parallax effects and animations."
-        image={card2}
-        link="https://github.com/Arshanashraf/Texts-App-Clone"
-        footer="#react #parallax #animation #Bootstrap #htmlcss"/>
+        
         <ProCards 
         title="Car Store"
         text="In this web-based project, I utilized animations, a slider, and Bootstrap cards."
