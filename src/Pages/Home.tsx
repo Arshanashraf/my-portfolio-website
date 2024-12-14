@@ -6,7 +6,7 @@ import '../components/floatingImage.css'
 function Home() {
   const handleDownload = () =>{
     const link =document.createElement("a");
-    link.href = "/myResume.pdf";
+    link.href = "/Resume.pdf";
     link.download = "Arshan-Resume.pdf";
     link.click();
   }

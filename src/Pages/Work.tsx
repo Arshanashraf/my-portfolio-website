@@ -31,11 +31,11 @@ const Work = () => {
         
         
         <ProCards 
-        title="Car Store"
-        text="In this web-based project, I utilized animations, a slider, and Bootstrap cards."
+        title="Ecommerce Website"
+        text="As a Front-End developer intern at DevelopersHub.co, I've developed a fully functional e-commerce website "
         image={card3}
-        link="https://github.com/Arshanashraf/Car-Store-Vite-React"
-        footer="#react #Bootstrap #animation #htmlcss"/>
+        link="https://github.com/Arshanashraf/Ecommerce-webDesign"
+        footer="#react #redux #tailwindcss #figma #react-router-dom"/>
         
       </div>
     </div>
